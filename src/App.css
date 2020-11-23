@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
+.Display{
+    display : block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.NotDisplay {
+    display : none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    background-color: #f2f6ff;
+   
+}
+.input-name{
+    padding: 10px 10px;
+    margin : 10px 10px;
+    box-shadow: inset;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    text-shadow: 0 2px 20px #aaa;;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+  #user1{
+    color: blue
+}
+ #user2{
+    color: red
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#startbtn{
+    font-size: 16px;
+}
+
+.grid-row1 > td , .grid-row2 > td , .grid-row3 > td {
+    width: 180px;
+    height: 180px;
+    box-sizing: border-box;
+    padding : 70px 70px;
+    overflow: auto;
+    box-shadow: 0 2px 20px #aaa;
+}
+.gridResult-row1 > td , .gridResult-row2 > td , .gridResult-row3 > td {
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    padding : 40px 40px;
+    overflow: auto; 
+    font-size: 20px;
+    font-family: Garamond;
+    text-transform: uppercase;
+}
+#table-result , .gridResult-row1 > td , .gridResult-row2 > td , .gridResult-row3 > td  {
+    border: 4px solid darkorange;
+    box-shadow: 0 1px 5px rgb(207, 191, 39);
+    border-collapse: collapse;
+}
+.showResult{
+    position : absolute;
+    top : 55%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    width: 900px;
+    height: 800px;
+    background-color: lightpink;
+    box-shadow: 0 2px 20px #aaa;
+    animation : move 1.25s linear 1;
+    text-transform: uppercase;
+}
+@keyframes move{
+    0%{
+        top : 0%;
+        left : 50%;
+        transform: translate(-50%,-50%);
+    }
+    100%{
+        top : 55%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    }
+}
+#play-again-btn{
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: Garamond;
+    font-weight: bold;
+}
+
+#result-caption{
+    position : relative;
+    top: 30px;
+    font-size: 80px;
+    color : darkred;
+    font-weight: bold;
+}
+
+caption{
+    padding : 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+table{
+    margin: auto;
+    margin-top: 80px ;
+}
+
+#turn-text {
+   font-size: 40px;
+   position : relative;
+   bottom: -40px;
+   text-transform: uppercase;
+}
+
+div {
+    text-align: center;
+    font-family: Garamond;
+}
+
+h4{
+    margin : 60px 60px;
+}
+
+
+
+
+#clear-btn {
+    position : absolute;
+    left : 75%;
+    top : 47%;
+    font-size: 30px;
+    font-family: Garamond;
+    font-weight: bold;
+    background-color: lightgrey;
+    border-color: linen;
+}
+
+#xxx {
+    font-size: 30px;
+    color: red;
+}
+
+#circle{
+    color : blue;
+    font-size: 30px;
+    }
+
+#confirm-caption {
+    position : absolute;
+    top : 82%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    font-family: Garamond;
 }
